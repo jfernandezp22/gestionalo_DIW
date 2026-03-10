@@ -22,11 +22,11 @@
 
             <nav class="main-nav">
                 <ul>
-                    <li class="nav-item"><a href="dashboard.html">Inicio</a></li>
+                    <li class="nav-item"><a href="dashboard.html" title="Página de inicio">Inicio</a></li>
                     <li class="nav-item"><a href="#">Gestión finanzas</a></li>
-                    <li class="nav-item"><a href="herramientas.html">Herramientas</a></li>
+                    <li class="nav-item"><a href="herramientas.html" title="Página de herramientas">Herramientas</a></li>
                     <li class="nav-item"><a href="#">Agente IA</a></li>
-                    <li class="nav-item nav-item--active"><a href="contacto.html">Contacto</a></li>
+                    <li class="nav-item nav-item--active"><a href="contacto.html" title="Página de contacto">Contáctanos</a></li>
                     <li class="nav-item"><a href="#">Perfil</a></li>
                 </ul>
             </nav>
@@ -49,17 +49,17 @@
                     <div class="form-column">
                         <div class="form-group">
                             <label for="nombre">Nombre y apellidos</label>
-                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                            <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo" tabindex="1">
                         </div>
 
                         <div class="form-group">
                             <label for="email">Correo electrónico</label>
-                            <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+                            <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com" tabindex="3">
                         </div>
 
                         <div class="form-group">
                             <label for="motivo">Motivo de la consulta</label>
-                            <select id="motivo" name="motivo" required>
+                            <select id="motivo" name="motivo" required tabindex="5">
                                 <option value="">-- Selecciona una opción --</option>
                                 <option value="duda">Duda sobre el funcionamiento</option>
                                 <option value="error">He encontrado un error</option>
@@ -73,28 +73,28 @@
                     <div class="form-column">
                         <div class="form-group">
                             <label for="telefono">Teléfono (opcional)</label>
-                            <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000">
+                            <input type="tel" id="telefono" name="telefono" placeholder="+34 600 000 000" tabindex="2">
                         </div>
 
                         <div class="form-group">
                             <label for="asunto">Asunto</label>
-                            <input type="text" id="asunto" name="asunto" required placeholder="Resumen breve de tu consulta">
+                            <input type="text" id="asunto" name="asunto" required placeholder="Resumen breve de tu consulta" tabindex="4">
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Describe aquí tu consulta con el máximo detalle posible"></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Describe aquí tu consulta con el máximo detalle posible" tabindex="6"></textarea>
                 </div>
 
                 <div class="form-footer">
                     <label class="checkbox-group">
-                        <input type="checkbox" id="privacidad" name="privacidad" required>
+                        <input type="checkbox" id="privacidad" name="privacidad" required tabindex="7">
                         <span>Acepto la política de privacidad y el tratamiento de mis datos.</span>
                     </label>
 
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary" aria-label="Enviar mensaje" tabindex="8">
                         Enviar mensaje
                     </button>
                 </div>
@@ -106,7 +106,8 @@
     <!-- Footer-->
     <footer class="main-footer">
         <div class="footer-inner">
-            <p>&copy; 2025 Gestionalo. Todos los derechos reservados.</p>
+            <a href="https://github.com/javipani12/Gestionalo">Gestionalo</a> © 2025 by <a href="https://github.com/javipani12">Javier Fernández Paniagua</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+            <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2 Level AA conformance"> <img height="31" width="88" src="https://www.w3.org/WAI/WCAG22/wcag2.2AA" alt="Level AA conformance, W3C Web Content Accessibility Guidelines 2.2"></a>
         </div>
     </footer>
     <!-- Fin de Footer-->

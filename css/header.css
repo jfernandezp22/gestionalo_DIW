@@ -67,6 +67,6 @@ body {
 
 .nav-item--active a,
 .main-nav a:hover {
-    color: var(--primary);                 
+    color: var(--dark);                 
     border-bottom-color: var(--secondary);
 }

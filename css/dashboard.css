@@ -39,7 +39,7 @@ main {
     margin-bottom: 12px;
     font-family: var(--font-main);
     font-size: 20px;
-    color: var(--primary);
+    color: var(--dark);
 }
 
 /* “Tabla” hecha con grid */
@@ -74,7 +74,7 @@ main {
 
 /* Enlaces */
 .table-like a {
-    color: var(--accent); 
+    color: var(--dark); 
     text-decoration: none;
     font-weight: 500;
 }
